@@ -1,0 +1,77 @@
+<!-- Coded by: Chin Wei Jin
+	 Team: 212
+	 Last modified: 18/5/2018 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Navigation - Add Routes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="196x196" href="images/icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Source taken from MDL websites at https://getmdl.io/ -->
+    <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall mdl-shadow--16dp">
+            <div class="mdl-layout-icon">
+                <a class="mdl-navigation__link" href="index.html">
+                    <font color="white">Back</font>
+                </a>
+
+            </div>
+            <div class="mdl-layout__header-row" style="height:6em">
+
+                <!-- Buttons -->
+                <div class="fixed">
+                    <button id="addMarker" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+							&#10010;
+						</button>
+                    <span>&emsp;&emsp;&emsp;</span>
+                    <button id="undoMarker" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+							&#8635;
+						</button>
+                    <span>&emsp;&emsp;&emsp;</span>
+                    <button id="addRoute" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+							&#8659;
+						</button>
+                    <span><br/>Add Marker&emsp;&emsp;Undo Marker&emsp;&emsp;Add Route </span>
+                </div>
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <!-- Navigation -->
+            <div id="map" class="map"></div>
+            <!-- Toast -->
+            <div id="toast" class="mdl-js-snackbar mdl-snackbar">
+                <div class="mdl-snackbar__text"></div>
+                <button class="mdl-snackbar__action" type="button"></button>
+            </div>
+
+        </main>
+
+        <!--   JavaScript files:   -->
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+        <script src="js/shared.js"></script>
+        <script src="js/utility.js"></script>
+        <script src="js/addRoutePage.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyASv4ykWNAQmp0-wD0pkICsYaq0BTuxdS4
+&callback=initMap"></script>
+    </div>
+</body>
+
+</html>

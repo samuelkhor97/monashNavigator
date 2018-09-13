@@ -1,0 +1,226 @@
+/*index.html*/
+/*Background Color*/
+.body {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+	height: auto;
+	width: auto;
+	background-color: aliceblue;
+}
+
+/*Day-Night Transition*/
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.mdl-navigation__link:hover {
+	text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%
+}
+
+/*Wrapper*/
+.main {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/*Headline*/
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font: 50px Helvetica, Arial, sans-serif;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+h4 {
+  text-transform: capitalize;
+}
+
+/*Feature Paragraphs*/
+.features {
+  width: 95%;
+  margin: 0 auto 30px auto;
+}
+
+.features l {
+  width: 33.33%;
+  padding: 0 20px;
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+}
+
+.features:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Buttons*/
+table.full-width {
+  text-align: center;
+  position: center;
+  margin-left:auto; 
+  margin-right:auto;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+  position: center;
+}
+
+table, tr, td {
+  border: 4px solid;
+}
+
+tr, td:hover {
+  background-color: #222;
+}
+
+/*Light Switch*/
+label {
+  display: block;
+  height: 25px;
+  width: 150px;
+  background: #eee;
+  text-align: center;
+  font: 14px/25px Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+  position: fixed;
+}
+
+label:hover {
+  background: #ddca7e;
+  color: #fff;
+  cursor: pointer;
+}
+
+input#lightswitch {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+/*Night Mode Configuration when Switched Off*/
+input#lightswitch:checked + .main h2 {
+  color: #ddca7e;
+}
+
+input#lightswitch:checked + .main h3 {
+  color: #aaa;
+}
+
+input#lightswitch:checked + .main h6 {
+  color: #aaa;
+}
+
+input#lightswitch:checked + .main p{
+  color: #aaa;
+}
+
+input#lightswitch:checked + .main {
+  background: #222;
+}
+
+input#lightswitch:checked + .main h4 {
+  color: #aaa;
+}
+
+input#lightswitch:checked + .body {
+  background-color: #222;
+}
+
+/*addRoute.html*/
+#addRoute {
+  text-decoration-color: aliceblue;
+}
+
+/*navigate.html*/
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  z-index: -100;
+}
+
+/*.container div {
+  background-color: #222;
+}*/
+
+.map {
+  flex: 1;
+  background: #f0f0f0;
+  flex-wrap: wrap;
+}
+
+.info {
+  height: 30% auto;
+  padding: 1rem;
+  margin: 0;
+}
+
+.info.error {
+  color: #fff;
+  background: #dc3545;
+}
+
+.heading {
+  padding: 1rem;
+  margin: 0;
+}
+
+.direction {
+  padding: 1rem;
+  margin: 0;
+}
+
+#directionImage {
+  height: 50px;
+  width: 100px;
+  padding: 1rem;
+  margin: 0;
+}
+
+.button {
+  border: 2px solid #222;
+  background: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 40%;
+  height: 100px;
+}
+
+.toast {
+  padding: 1rem;
+  margin: 0;
+}
